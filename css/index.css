@@ -1,0 +1,184 @@
+main{
+    background-image: url("/img/hoodie3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    color: white;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+.header{
+    display: flex;
+    place-content: space-evenly;
+    list-style-type: none;
+    background-color: black;
+    height: 6em;
+}
+
+.dropdown{
+    overflow: hidden;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: lightgray;
+    min-width: 3rem;
+    color:black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown .dropbtn{
+    background-color:black ;
+    text-decoration: none;
+    border: none;
+    color: whitesmoke;
+    font-family:'BioRhyme','serif';
+    font-size: 1em;
+}
+
+.header a, .dropdown{
+    color: whitesmoke;
+    transition: all 0.3s ease-in;
+    padding-top: 2rem;
+    font-size: 1.3rem
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 0.8em;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: none;
+}
+
+.header a:hover{
+    font-size: 1.1rem;
+    color: gray;
+}
+
+ .dropbtn:hover{
+    color: gray; 
+} 
+
+.dropdown-content a:hover{
+    background-color: #ddd;
+}
+
+h1{
+    font-size: 3em;
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+
+#container{
+    text-align: center;
+}
+
+#view-products {                                  /*button*/
+    border: none;
+    margin-top: 2em;
+    background: #404040;
+    color: #ffffff;
+    font-weight: 100;
+    padding: 20px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    display: inline-block;
+    
+}
+
+#view-products:hover{
+    background: red;
+    transition: all 0.3s ease-in-out   ;
+}
+
+
+.product {
+  background-color: transparent;
+  border: white solid 2px;
+  padding: 0 1em;
+  overflow: hidden;
+  box-shadow: 0 0 1em rgba(0,0,0,0.4);
+  margin: 1em 0em;
+}
+
+.search-box{ /********************CODE FOR SEARCH BAR**********************/
+    text-align: center;
+    background: transparent;
+    height: 3em;
+    border-radius: 2em;
+    padding-top:10px;
+    margin-bottom: 3em;
+    margin-top: 2em;
+} 
+
+.search-btn{
+    color: red;
+    width: 2em;
+    height: 2em;
+    background: transparent;
+    text-decoration: none;
+    border:none;
+}
+
+
+.search-txt{
+    color: black;
+    width: 40em;
+    height: 2em;
+    text-decoration: none;
+    border-radius: 0.5em;
+    font-size: 1.2em;
+    transition: 0.4s ease-in;
+
+}
+
+/*****************************FOOTER *************************/
+footer{
+    background-color: lightgrey;
+}
+
+#subscribe_us {
+    text-align: center;
+}
+
+#subscribe_us h2{
+    font-size: 1.5em;
+    padding-bottom: 1em;
+}
+
+#subscribe_us input, #subscribe_us button{
+    margin-top: 1em;
+}
+
+#subscribe_us button {
+background-color: white; 
+  color: black; 
+  border: 2px solid #555555;
+  padding: 0.3em 0.3em;
+}
+
+#subscribe_us button:active{
+    transform: translateY(4px);
+} 
+
+#email_input{
+    padding:0.3em 0.3em ;
+    width:18em ;
+    border: 2px solid #555555;
+}

@@ -79,6 +79,9 @@ nav a{
     background-color: #ddd;
 }
 
+/****************************** MAIN **************************************/
+
+
 h1{
     font-size: 3em;
     padding-top: 2em;
@@ -211,7 +214,7 @@ footer a:hover {
     font-size: 1.1rem;  
 }
 
-.icons{
+.icons{ 
     border: 1px solid red;
     margin-top: 2em;
     color: rgba(0,0,0,0.5);

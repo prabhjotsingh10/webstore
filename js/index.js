@@ -44,7 +44,7 @@ function getProductsasHtml(product)
  return `
     <article class="product">
     <h3 id="name">${product.name}</h3>
-        <ul>
+        <ul class="courst-info">
             <li>Product Code: <strong>${product.id}</strong></li>
             <li>Images: ${product.image}</strong></li>
             <li><strong> Description: ${product.description} </strong></li>
@@ -60,14 +60,38 @@ function getProductsasHtml(product)
 function displaySearchBar(){
     return `
         <div class="search-box"> 
-        <input class="search-txt" type="text"  placeholder="Type to search">
+        <input class="search-txt" id="search-box" type="text"  placeholder="Type to search">
         <button class="search-btn" href=#> <i class="fas fa-search"> </i>
-        </button> </div>`
+        </button>
+        </div>`
 }
 
- button.addEventListener("click",() =>
- document.getElementById("products_display").innerHTML = products.map(getProductsasHtml).join("\n"));
+const searchForProducts=() => {
+    const search = document.getElementById("search-box").Value;
+    console.log(search);
+    const lowerVersion = search.trim().toLowerCase();
+    const results = products.filter(c => c.name.toLowerCase().includes(lowerVersion));
+    renderProductsFromArray(results)
+} 
 
- button.addEventListener("click", () => 
- document.getElementById("search_bar").innerHTML = displaySearchBar())
+const renderProductsFromArray = (arr) => {
+    document.getElementById("products_display").innerHTML = arr.map(getProductsasHtml).join("\n");
+}
+
+const viewAsTiles = ( ) => {
+    document.getElementById("products_display").classList.toggle('grid-view');
+}
+
+/*******************EXECUTION **********************/
+window.addEventListener('load', () => {
+
+button.addEventListener("click",() =>
+    document.getElementById("products_display").innerHTML = products.map(getProductsasHtml).join("\n") )    ;
+
+
+    button.addEventListener("click", () => 
+    document.getElementById("search_bar").innerHTML = displaySearchBar())
+    //document.getElementById("search-txt").addEventListener("input",searchForProducts);
+    document.getElementById("courseView").addEventListener("click",viewAsTiles);
  
+});

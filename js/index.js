@@ -17,7 +17,7 @@ const products = [
     {
         id: 2,
         name: `Adidas Athletics`,
-        image: "img/adidas athletics.jpg",
+        image: "/img/adidas athletics.jpg",
         description: "Regular fit strikes a comfortable balance between loose and snug. Long sleeves with ribbed cuffs. 70% cotton / 30% recycled polyester French terry",
         price: 85.00,
         quantity: 1,
@@ -45,11 +45,11 @@ function getProductsasHtml(product)
     <article class="product">
     <h3 id="name">${product.name}</h3>
         <ul class="courst-info">
+            <li><img src="${product.image}" style="height:20em; width:20em;" alt="${product.name}"> </strong></li>
             <li>Product Code: <strong>${product.id}</strong></li>
-            <li>Images: ${product.image}</strong></li>
-            <li><strong> Description: ${product.description} </strong></li>
-            <li>Price: <strong>${product.price}</strong>
-            <li>Quantity: <strong>${product.quantity}</strong></li>
+            <li><strong>  ${product.description} </strong></li>
+            <li>Price: <strong>${product.price}$</strong>
+            <li>Quantity In-stock: <strong>${product.quantity}</strong></li>
             <li>Category: ${product.category}</li>
             <li>Color: ${product.color}</li>
             <li>Size: ${product.size}</li>
@@ -57,17 +57,27 @@ function getProductsasHtml(product)
         </article>`
  }
 
-function displaySearchBar(){
+function displaySearchBar(){ /***************SEARCH BOX DYNAMIC/***********  */
     return `
         <div class="search-box"> 
-        <input class="search-txt" id="search-box" type="text"  placeholder="Type to search">
+        <input class="search-txt" id="search-box" type="text" placeholder="Type to search">
         <button class="search-btn" href=#> <i class="fas fa-search"> </i>
         </button>
         </div>`
 }
 
+/*************SIDEBAR NAV *******************/
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+
 const searchForProducts=() => {
-    const search = document.getElementById("search-box").Value;
+    const search = document.getElementById("search-box").value;
     console.log(search);
     const lowerVersion = search.trim().toLowerCase();
     const results = products.filter(c => c.name.toLowerCase().includes(lowerVersion));
@@ -85,13 +95,12 @@ const viewAsTiles = ( ) => {
 /*******************EXECUTION **********************/
 window.addEventListener('load', () => {
 
-button.addEventListener("click",() =>
-    document.getElementById("products_display").innerHTML = products.map(getProductsasHtml).join("\n") )    ;
+    // document.getElementById("products_display").innerHTML = products.map(getProductsasHtml).join("\n")    ;
+    renderProductsFromArray(products);
 
-
-    button.addEventListener("click", () => 
-    document.getElementById("search_bar").innerHTML = displaySearchBar())
-    //document.getElementById("search-txt").addEventListener("input",searchForProducts);
+    document.getElementById("search_bar").innerHTML = displaySearchBar();
+    document.getElementById("search-box").addEventListener("input",searchForProducts);
     document.getElementById("courseView").addEventListener("click",viewAsTiles);
  
+
 });

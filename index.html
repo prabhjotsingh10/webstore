@@ -1,79 +1,73 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOOD</title>
-    <meta name="description" content="[A short description]">
-    <meta name="author" content="Prabhjot Singh">
-    <script src="https://kit.fontawesome.com/d8743a4f35.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/reset.css"> <!-- You may change this "Reset" to "Normalize" if preferred -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> <!-- Material design icons are use below. Remove this line if using other font packs or images. Details on Material Design icons can be found here: https://material.io/resources/icons/ -->
-    <link rel="stylesheet" href="css/index.css">
-  </head>
-  <body>
-    <!-- Note: From this point oneward, this document should be considered 100% customizable. The elements and structure below are simply an example template to get you started. Your products and application will have different criteria that will give you the opportunity to customize all aspects of this document to your needs. Use what you need, discard or modify anything that's not directly useful in reaching your end goal. -->
 
-    <header id="first-header">
-      <!-- Site logo, replace with your own -->
-      <!-- <a href="index.html"><img src="img/logo.svg" alt="HTML Logo (replace this)"></a> -->
-<!-- 
-      <button type="button">
-        <span class="material-icons">menu</span>
-      </button> -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOOD</title>
+  <meta name="description" content="[A short description]">
+  <meta name="author" content="Prabhjot Singh">
+  <script src="https://kit.fontawesome.com/d8743a4f35.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/reset.css"> <!-- You may change this "Reset" to "Normalize" if preferred -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!-- Material design icons are use below. Remove this line if using other font packs or images. Details on Material Design icons can be found here: https://material.io/resources/icons/ -->
+  <link rel="stylesheet" href="css/index.css">
+</head>
 
+<body>
+  <!-- Note: From this point oneward, this document should be considered 100% customizable. The elements and structure below are simply an example template to get you started. Your products and application will have different criteria that will give you the opportunity to customize all aspects of this document to your needs. Use what you need, discard or modify anything that's not directly useful in reaching your end goal. -->
+
+  <header id="first-header">
+    <!-- Site logo, replace with your own -->
+    <!-- <a href="index.html"><img src="img/logo.svg" alt="HTML Logo (replace this)"></a> -->
+    <!-- 
+      
       <!-- Navigation menu and toggle button (example) -->
-        <nav aria-label="Primary" class="header">
-          <!-- <div class="search-box"> <input class="search-txt" type="text" name="" placeholder="Type to search"> <a class="search-btn" href=#> <i class="fas fa-search"></i> </a> </div>
+    <nav aria-label="Primary" class="header">
+      <!-- <div class="search-box"> <input class="search-txt" type="text" name="" placeholder="Type to search"> <a class="search-btn" href=#> <i class="fas fa-search"></i> </a> </div>
           <a href="index.html"><img src="img/rocket-ship-logoa.jpg" style="width: 4em; height: 3em" alt="HTML Logo (replace this)"></a> -->
-          <a href="#">Home</a>
-          <div class="dropdown">
-              <button class="dropbtn"> Shop For <i
-                      class="fas fa-caret-down"></i></button>
-              <div class="dropdown-content">
-                  <a href="#">Men</a>
-                  <a href="#">Women </a>
-                  <a href="#">Kids </a>
-              </div>
-          </div>
-          <a href="#">Store</a>
-          <a href="#">Contact Us</a>
-          <a href="#">About Us</a>
-          <a href="#"><i class="fas fa-shopping-cart"></i></a>
-          <a href="#">Sign-in <i class="fas fa-user-circle"></i></a>
-      </nav>
+      <a href="#">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn"> Shop For <i class="fas fa-caret-down"></i></button>
+        <div class="dropdown-content">
+          <a href="#">Men</a>
+          <a href="#">Women </a>
+          <a href="#">Kids </a>
+        </div>
+      </div>
+      <a href="#">Store</a>
+      <a href="#">Contact Us</a>
+      <a href="#">About Us</a>
+      <a href="#"><i class="fas fa-shopping-cart"></i></a>
+      <a href="#">Sign-in <i class="fas fa-user-circle"></i></a>
+    </nav>
 
 
-      <!-- Search the site -->
-      <!-- <form>
+    <!-- Search the site -->
+    <!-- <form>
         <label>Search
           <input type="search" name="find" id="find">
         </label>
         <button type="button"><span class="material-icons">search</span></button>
       </form> -->
 
-      <!-- Additional functionality or links -->
-      <!-- <ul>
+    <!-- Additional functionality or links -->
+    <!-- <ul>
         <li><button><span class="material-icons">favorite_border</span></button></li>
         <li><button><span class="material-icons">shopping_cart</span></button></li>
       </ul> -->
-     </header>
+  </header>
+  <div id="container">
+    <h1>Shop for our exclusive Product Deals.Only till Christmas. <i class="fas fa-sleigh"></i> </h1>
+    <!-- <button type="button" id="view-products"> SHOP NOW</button> -->
+    <button id="courseView">Toggle Layout</button><p id="search_bar"> &nbsp;</p>
+  </div>
 
-    <main>
-      <div id="container">
-        <h1>Shop for our exclusive Product Deals.Only till Christmas. <i class="fas fa-sleigh"></i> </h1>
-        <button type="button" id="view-products"> SHOP NOW</button>
-        <button id="courseView">Toggle Layout</button> 
-      </div>
-      <div id="search_bar"> &nbsp;</div>
-      <div id="products_display"> 
-          <h1>&nbsp;</h1>
-      </div>
-      <!-- <header>
-        <h1>Sale on [Category Name]</h1>
+  <main>
 
-         Filtering product form -->
-        <!-- <form>
+    <section class="main-content">
+      <div id="side-nav">
+        <form>
           <h2>Filters</h2>
           <fieldset>
             <label for="sort">Show</label>
@@ -109,42 +103,61 @@
               <li>
                 <input type="radio" name="rating" value="4" id="aboveFour">
                 <label for="aboveFour">
-                  <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_border</span>
+                  <span class="material-icons">star</span><span class="material-icons">star</span><span
+                    class="material-icons">star</span><span class="material-icons">star</span><span
+                    class="material-icons">star_border</span>
                 </label>
               </li>
               <li>
                 <input type="radio" name="rating" value="3" id="aboveThree">
                 <label for="aboveThree">
-                  <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span>
+                  <span class="material-icons">star</span><span class="material-icons">star</span><span
+                    class="material-icons">star</span><span class="material-icons">star_border</span><span
+                    class="material-icons">star_border</span>
                 </label>
               </li>
               <li>
                 <input type="radio" name="rating" value="2" id="aboveTwo">
                 <label for="aboveTwo">
-                  <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span>
+                  <span class="material-icons">star</span><span class="material-icons">star</span><span
+                    class="material-icons">star_border</span><span class="material-icons">star_border</span><span
+                    class="material-icons">star_border</span>
                 </label>
               </li>
               <li>
                 <input type="radio" name="rating" value="1" id="aboveOne">
                 <label for="aboveOne">
-                  <span class="material-icons">star</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span>
+                  <span class="material-icons">star</span><span class="material-icons">star_border</span><span
+                    class="material-icons">star_border</span><span class="material-icons">star_border</span><span
+                    class="material-icons">star_border</span>
                 </label>
               </li>
             </ol>
           </fieldset>
         </form>
-      </header>
+      </div>
 
-      <section>
+      <div id="products_display">
+        <h1>&nbsp;</h1>
+      </div>
+    </section>
+  </main>
+  <!-- <header>
+        <h1>Sale on [Category Name]</h1>
+
+         Filtering product form -->
+
+
+  <!-- <section>
         <h2>Search Results</h2>
 
-         Note: All 5 products are identical -->
-        <!-- <div id="products">
+         Note: All 5 products are identical --> 
+  <!-- <div id="products">
            Product 1 -->
-          <!-- <article class="product">
+  <!-- <article class="product">
             <header>
                <img src="img/product.jpg" alt="Product Image"> -->
-            <!-- </header>
+  <!-- </header>
             <h3>Product Name</h3>
             <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
             <form>
@@ -157,8 +170,8 @@
                 </ul>
               </fieldset> -->
 
-              <!-- <fieldset> -->
-                <!-- <legend>Sizes</legend>
+  <!-- <fieldset> -->
+  <!-- <legend>Sizes</legend>
                 <ol>
                   <li><label><input type="radio" name="size" value="m"> <span>M</span></label></li>
                   <li><label><input type="radio" name="size" value="l"> <span>L</span></label></li>
@@ -177,13 +190,13 @@
                 <a href="#">see more</a>
               </footer>
             </form>
-          </article> --> 
+          </article> -->
 
-          <!-- Product 2 -->
-          <!-- <article class="product">
+  <!-- Product 2 -->
+  <!-- <article class="product">
             <header>
               <!-- <img src="img/product.jpg" alt="Product Image"> -->
-            <!-- </header>
+  <!-- </header>
             <h3>Product Name</h3>
             <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
             <form>
@@ -196,15 +209,15 @@
                 </ul>
               </fieldset> -->
 
-              <!-- <fieldset>
+  <!-- <fieldset>
                 <legend>Sizes</legend> -->
-                <!-- <ol>
+  <!-- <ol>
                   <li><label><input type="radio" name="size" value="m"> <span>M</span></label></li>
                   <li><label><input type="radio" name="size" value="l"> <span>L</span></label></li>
                   <li><label><input type="radio" name="size" value="xl"> <span>XL</span></label></li>
                 </ol>
-              </fieldset> --> 
-<!-- 
+              </fieldset> -->
+  <!-- 
               <footer>
                 <dl>
                   <dt>Rating</dt>
@@ -216,13 +229,13 @@
                 <a href="#">see more</a>
               </footer>
             </form>
-          </article> --> 
+          </article> -->
 
-          <!-- Product 3 -->
-          <!-- <article class="product">
+  <!-- Product 3 -->
+  <!-- <article class="product">
             <header>
               <!-- <img src="img/product.jpg" alt="Product Image"> -->
-            <!-- </header>
+  <!-- </header>
             <h3>Product Name</h3>
             <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
             <form>
@@ -235,7 +248,7 @@
                 </ul>
               </fieldset> -->
 
-              <!-- <fieldset>
+  <!-- <fieldset>
                 <legend>Sizes</legend>
                 <ol>
                   <li><label><input type="radio" name="size" value="m"> <span>M</span></label></li>
@@ -244,7 +257,7 @@
                 </ol>
               </fieldset> -->
 
-              <!-- <footer>
+  <!-- <footer>
                 <dl>
                   <dt>Rating</dt>
                   <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
@@ -257,8 +270,8 @@
             </form>
           </article>
      -->
-          <!-- Product 4 -->
-          <!-- <article class="product">
+  <!-- Product 4 -->
+  <!-- <article class="product">
             <header>
               <img src="img/product.jpg" alt="Product Image">
             </header>
@@ -274,7 +287,7 @@
                 </ul>
               </fieldset> -->
 
-              <!-- <fieldset>
+  <!-- <fieldset>
                 <legend>Sizes</legend>
                 <ol>
                   <li><label><input type="radio" name="size" value="m"> <span>M</span></label></li>
@@ -283,7 +296,7 @@
                 </ol>
               </fieldset> -->
 
-              <!-- <footer>
+  <!-- <footer>
                 <dl>
                   <dt>Rating</dt>
                   <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
@@ -296,11 +309,11 @@
             </form>
           </article> -->
 
-          <!-- Product 5 -->
-          <!-- <article class="product">
+  <!-- Product 5 -->
+  <!-- <article class="product">
             <header>
               <img src="img/product.jpg" alt="Product Image"> -->
-            <!-- </header>
+  <!-- </header>
             <h3>Product Name</h3>
             <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
             <form>
@@ -322,7 +335,7 @@
                 </ol>
               </fieldset> -->
 
-              <!-- <footer>
+  <!-- <footer>
                 <dl>
                   <dt>Rating</dt>
                   <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
@@ -337,7 +350,7 @@
         </div>
       </section> -->
 
-      <!-- <footer>
+  <!-- <footer>
         <p>1-5 of 20 products found</p>
         <nav aria-label="Product Pages">
           <a href="#" aria-label="Previous page">prev</a>
@@ -350,34 +363,38 @@
           <a href="#" aria-label="Next page">next</a>
         </nav>
       </footer> -->
-    </main>
 
-    <footer>
-      <div id="subscribe_us">
+
+  <footer>
+    <div id="subscribe_us">
       <h2>Subscribe Us</h2>
       <p>Join us on our Adventure and be the first one to get updates & specials</p>
-      <input type="text" id="email_input" placeholder="Enter your email here"> <button type="submit" id="subscribe_button">Subscribe</button>
-      </div>
-      
-      <nav aria-label="Legal">
-        <ul id="termsAndPolicies">
-          <li><a href="#">Terms of Use</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Accessibility Policy </a></li>
-        </ul>
-      </nav>
-      <div class="icons">
-          <ul>
-            <li><span class="copyRight"><p>&copy; Copyright, 1991. All Rights Reserved.</p></span></li>
-            <li><a href="#"><i class="fab fa-facebook-f"></i> </a></li>
-            <li><a href="#"><i class="fab fa-instagram"></i> </a></li>
-            <li><a href="#"><i class="fab fa-snapchat-ghost"></i> </a></li>
-          </ul>
-      </div>
-    </footer>
-    
-    <!-- [Remove all default comments in this document after reading] -->
+      <input type="text" id="email_input" placeholder="Enter your email here"> <button type="submit"
+        id="subscribe_button">Subscribe</button>
+    </div>
 
-    <script src="js/index.js"></script>
-  </body>
+    <nav aria-label="Legal">
+      <ul id="termsAndPolicies">
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Accessibility Policy </a></li>
+      </ul>
+    </nav>
+    <div class="icons">
+      <ul>
+        <li><span class="copyRight">
+            <p>&copy; Copyright, 1991. All Rights Reserved.</p>
+          </span></li>
+        <li><a href="#"><i class="fab fa-facebook-f"></i> </a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i> </a></li>
+        <li><a href="#"><i class="fab fa-snapchat-ghost"></i> </a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- [Remove all default comments in this document after reading] -->
+
+  <script src="js/index.js"></script>
+</body>
+
 </html>

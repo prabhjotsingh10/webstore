@@ -13,6 +13,12 @@ nav a{
 
 /********************SIDEBAR NAV ****************************/
 
+#side-nav h2{
+    font-size: 2em;
+    padding: 1em;
+    font-weight: bold;
+    
+}
 
 /**************************/
 
@@ -128,8 +134,8 @@ h1{
   padding:0em 1em;
   overflow: hidden;
   box-shadow: 0 0 1em rgba(0,0,0,0.4);
-  margin: 1em 0em;
-  max-width: 35em;
+  margin: 3em 0em;
+  max-width: 30em;
   margin: auto;
   text-align: center;
 }
@@ -137,6 +143,7 @@ h1{
 #products_display{
     display: grid;
     grid-gap: 1em;
+    padding-top: 1em;
 }
 
 .search-box{ /********************CODE FOR SEARCH BAR**********************/
@@ -187,7 +194,6 @@ h1{
     background-image: url("/img/background_2.jpg");
     background-size: cover;
 }
-
 
 /*****************************FOOTER *************************/
 footer{
@@ -277,7 +283,8 @@ footer a:hover {
 @media screen and (min-width:40em){ 
 
 .grid-view {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr ;
+    
   }
 
 .grid-view .course-info{

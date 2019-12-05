@@ -46,7 +46,6 @@ function getProductsasHtml(product)
     <h3 id="name">${product.name}</h3>
         <ul class="courst-info">
             <li><img src="${product.image}" style="height:20em; width:20em;" alt="${product.name}"> </strong></li>
-            <li>Product Code: <strong>${product.id}</strong></li>
             <li><strong>  ${product.description} </strong></li>
             <li>Price: <strong>${product.price}$</strong>
             <li>Quantity In-stock: <strong>${product.quantity}</strong></li>
@@ -68,13 +67,6 @@ function displaySearchBar(){ /***************SEARCH BOX DYNAMIC/***********  */
 
 /*************SIDEBAR NAV *******************/
 
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-  }
-  
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-  }
 
 const searchForProducts=() => {
     const search = document.getElementById("search-box").value;

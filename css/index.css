@@ -23,7 +23,7 @@ nav a{
 /**************************/
 
 
-.header{
+nav{
     display: flex;
     place-content: space-evenly;
     list-style-type: none;
@@ -52,6 +52,10 @@ nav a{
     color: whitesmoke;
     font-family:'BioRhyme','serif';
     font-size: 1em;
+}
+
+.logo{
+    margin-bottom: 40px;
 }
 
 .header a, .dropdown{
@@ -104,22 +108,32 @@ h1{
     text-align: center;
 }
 
-#view-products {                                  /*button*/
+.view-products {                                  /*button*/
     border: none;
-    margin-top: 2em;
     background: #404040;
     color: #ffffff;
     font-weight: 100;
     padding: 20px;
     text-transform: uppercase;
     border-radius: 6px;
-    display: inline-block;
-    
+    display: inline;
+    margin-left: 2em;
 }
 
-#view-products:hover{
+.view-products:hover{
     background: red;
     transition: all 0.3s ease-in-out   ;
+}
+
+.sort{
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+#sort-by{
+    font-size: 1.5em;
+    display: inline-block;
+    margin-right: 2em;
 }
 
 #name{
@@ -140,8 +154,9 @@ h1{
   text-align: center;
 }
 
-#products_display{
+.products_display{
     display: grid;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 1em;
     padding-top: 1em;
 }
@@ -195,6 +210,20 @@ h1{
     background-size: cover;
 }
 
+#addtocart{
+    margin: 1em;
+    background:transparent;
+    color: white;
+    text-decoration: none; 
+    width: 10em;
+    font-size: 1.2em; border: 1px solid white; border-radius: 0.3em;
+}
+
+#addtocart:hover{
+    background: white;
+    color: black;
+}
+
 /*****************************FOOTER *************************/
 footer{
     background-image: url("/img/footer.jpg");
@@ -242,9 +271,9 @@ footer a:hover {
     border: 2px solid #555555;
 }
 
-.grid-view {
+/* .grid-view {
     display: inline-block;
-  }
+  } */
 
 #termsAndPolicies li{
     display: inline-block;
@@ -283,7 +312,9 @@ footer a:hover {
 @media screen and (min-width:40em){ 
 
 .grid-view {
-    grid-template-columns: 1fr 1fr ;
+    margin-top: 1em;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
     
   }
 

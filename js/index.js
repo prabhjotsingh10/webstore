@@ -11,7 +11,7 @@ const products = [
         quantity: 1,
         category: `clothing`,
         color: `maroon`,
-        size: `Medium`
+        size: `M`
     }
     ,
     {
@@ -23,8 +23,128 @@ const products = [
         quantity: 1,
         category: `clothing`,
         color: `Gray`,
-        size: `Large`
+        size: `L`
     },
+    {
+        id: 3,
+        name: `Adidas Originals`,
+        image: "img/adidas originals.jpg",
+        description: `Kangaroo pocket; Drawcord-adjustable hood.Long sleeves with ribbed cuffs. 100% soft feel.`,
+        price: 54.00,
+        quantity: 1,
+        category: `clothing`,
+        color: `White`,
+        size: `XL`
+    }
+    ,
+    {
+        id: 4,
+        name: `3D Graphic Rainbow hoodie`,
+        image: "img/Rainbow-hoodie.jpg",
+        description: `Polyester,spandex,cotton,soft and silky feeling,never fading or shrink.High Quality and comfortable.`,
+        price: 27.00,
+        quantity: 1,
+        category: `clothing`,
+        color: `pour milk`,
+        size: `L`
+    }
+    ,
+    {
+        id: 5,
+        name: `Thrasher Flame Logo Hoodie`,
+        image: "img/Thrasher.jpg",
+        description: `A fleece lining provides excellent comfort and warmth in a black colorway that features an iconic Thrasher flame logo graphic screen printed on the chest.`,
+        price: 99.00,
+        quantity: 4,
+        category: `clothing`,
+        color: `White`,
+        size: `XL`
+    }
+    ,
+    {
+        id: 6,
+        name: `Champion Reverse Weave All Over Print Black`,
+        image: "img/Champion.jpg",
+        description: `Bundle up in classic athleisure style with the Champion Reverse Weave All Over Print black hoodie. This classic hoodie features a fleece lined interior for maximum comfort, while Champion logo script screen-printed throughout in white provides a prominent splash of classic branding and style.`,
+        price: 95.00,
+        quantity: 1,
+        category: `clothing`,
+        color: `Black`,
+        size: `L`
+    }
+    ,
+    {
+        id: 7,
+        name: `Obey Sports grey`,
+        image: "img/Obey.jpg",
+        description: `Add some collegiate flair to your streetwear style with the Sports grey, teal and gold hoodie from Obey. A heather grey construction is further highlighted by a teal and gold screen-printed logo across the chest`,
+        price: 85.00,
+        quantity: 1,
+        category: `clothing`,
+        color: `White`,
+        size: `XL`
+    }
+    ,
+    {
+        id: 3,
+        name: `Adidas Originals`,
+        image: "img/adidas originals.jpg",
+        description: `Kangaroo pocket.Drawcord-adjustable hood.Long sleeves with ribbed cuffs. 100% soft feel.`,
+        price: 54.00,
+        quantity: 1,
+        category: `clothing`,
+        color: `White`,
+        size: `XL`
+    }
+    ,
+    {
+        id: 3,
+        name: `Adidas Originals`,
+        image: "img/adidas originals.jpg",
+        description: `Kangaroo pocket.Drawcord-adjustable hood.Long sleeves with ribbed cuffs. 100% soft feel.`,
+        price: 54.00,
+        quantity: 1,
+        category: `clothing`,
+        color: `White`,
+        size: `XL`
+    }
+    ,
+    {
+        id: 3,
+        name: `Adidas Originals`,
+        image: "img/adidas originals.jpg",
+        description: `Kangaroo pocket; Drawcord-adjustable hood.Long sleeves with ribbed cuffs. 100% soft feel.`,
+        price: 54.00,
+        quantity: 1,
+        category: `clothing`,
+        color: `White`,
+        size: `XL`
+    }
+    ,
+    {
+        id: 3,
+        name: `Adidas Originals`,
+        image: "img/adidas originals.jpg",
+        description: `Kangaroo pocket; Drawcord-adjustable hood.Long sleeves with ribbed cuffs. 100% soft feel.`,
+        price: 54.00,
+        quantity: 1,
+        category: `clothing`,
+        color: `White`,
+        size: `XL`
+    }
+    ,
+    {
+        id: 3,
+        name: `Adidas Originals`,
+        image: "img/adidas originals.jpg",
+        description: `Kangaroo pocket; Drawcord-adjustable hood.Long sleeves with ribbed cuffs. 100% soft feel.`,
+        price: 54.00,
+        quantity: 1,
+        category: `clothing`,
+        color: `White`,
+        size: `XL`
+    }
+    ,
     {
         id: 3,
         name: `Adidas Originals`,
@@ -52,11 +172,12 @@ function getProductsasHtml(product)
             <li>Category: ${product.category}</li>
             <li>Color: ${product.color}</li>
             <li>Size: ${product.size}</li>
+            <li><button id="addtocart"> Add To Cart </button></li>
         </ul>
         </article>`
  }
 
-function displaySearchBar(){ /***************SEARCH BOX DYNAMIC/***********  */
+function displaySearchBar(){ /***************SEARCH BOX DYNAMIC/************/
     return `
         <div class="search-box"> 
         <input class="search-txt" id="search-box" type="text" placeholder="Type to search">

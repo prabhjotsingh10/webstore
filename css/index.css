@@ -1,8 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab|Sulphur+Point&display=swap');
+
+html{
+    font-family:  'Josefin Slab', serif;;
+
+}
 main{
-    background-image: url("/img/hoodie3.jpg");
+    background-image: url("/img/laser.jpg");
+    /* background-color: darkslategrey; */
     background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: contain;
+    background-repeat: repeat;
     height: 100%;
     color: white;
 }
@@ -13,12 +20,24 @@ nav a{
 
 /********************SIDEBAR NAV ****************************/
 
+.mainmenu-toggle {
+    display: block;
+    margin: 1em 0;
+    cursor: pointer;
+    margin-left: auto;
+  }
+
+.mainmenu.open { /* An element with BOTH .mainmenu and .open */
+    transform: translateX(0em);
+  }
+
 #side-nav h2{
     font-size: 2em;
     padding: 1em;
     font-weight: bold;
     
 }
+
 
 /**************************/
 
@@ -50,7 +69,7 @@ nav{
     text-decoration: none;
     border: none;
     color: whitesmoke;
-    font-family:'BioRhyme','serif';
+    /* font-family:'BioRhyme','serif'; */
     font-size: 1em;
 }
 
@@ -87,6 +106,13 @@ nav{
     color: gray;
 }
 
+.christmas{
+    color: red;
+    /* font-weight: bold; */
+    font-weight: 1000;
+    font-style: italic;
+}
+
  .dropbtn:hover{
     color: gray; 
 } 
@@ -94,6 +120,7 @@ nav{
 .dropdown-content a:hover{
     background-color: #ddd;
 }
+
 
 /****************************** MAIN **************************************/
 
@@ -104,9 +131,10 @@ h1{
     padding-bottom: 1em;
 }
 
-#container{
-    text-align: center;
-}
+input[type=radio]:focus + label {
+    outline: rgba(77, 97, 171, 0.5) auto 3px;
+  }
+
 
 .view-products {                                  /*button*/
     border: none;
@@ -145,7 +173,7 @@ h1{
 #name{
     font-size: 2em;
     text-align: center;
-    padding-bottom: 1em;
+    padding: 0.5em;
 }
 
 .product {
@@ -212,8 +240,15 @@ h1{
 }
 
 #container{
-    background-image: url("/img/background_2.jpg");
+    background-image: url("/img/1.jpeg");
     background-size: cover;
+    padding-top: 3em;
+    font-weight: bold;
+    text-align: center;
+}
+
+#container h1{
+    padding-top: 2em;
 }
 
 #addtocart{
@@ -279,7 +314,7 @@ footer a:hover {
 
 #termsAndPolicies li{
     display: inline-block;
-    padding: 0em 10em;
+    padding: 0em 9em;
     margin-top: 1em;
     font-weight: bold;  
     font-size: 1.1rem;  
@@ -300,7 +335,7 @@ footer a:hover {
 
 .icons ul li a {
     font-size: 20px;
-    margin-left: 18em;
+    margin-left: 17em;
     margin-top: 1em;
 }
 
@@ -320,7 +355,8 @@ footer a:hover {
     
   }
 
-.grid-view .course-info{
+/* .grid-view .course-info{
     display: none;
 }
+} */
 }

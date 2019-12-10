@@ -9,8 +9,8 @@ const products = [
         description: "Fabric Content: 50% cotton/50% polyester, with up to 5% polyester created from recycled plastic",
         price: 15.99,
         quantity: 1,
-        category: `clothing`,
-        color: `Red`,
+        rating: 4.2,
+        color: [`Red`],
         size: `M`
     }
     ,
@@ -18,11 +18,11 @@ const products = [
         id: 2,
         name: `Adidas Athletics`,
         image: "/img/adidas athletics.jpg",
-        description: "Regular fit strikes a comfortable balance between loose and snug. Long sleeves with ribbed cuffs. 70% cotton / 30% recycled polyester French terry",
+        description: "Fabric Content: Long sleeves with ribbed cuffs. 70% cotton / 30% recycled polyester French terry",
         price: 85.00,
         quantity: 1,
-        category: `clothing`,
-        color: `Gray`,
+        rating: 4.1,
+        color: [`Gray`],
         size: `L`
     },
     {
@@ -32,8 +32,8 @@ const products = [
         description: `Kangaroo pocket; Drawcord-adjustable hood.Long sleeves with ribbed cuffs. 100% soft feel.`,
         price: 54.00,
         quantity: 1,
-        category: `clothing`,
-        color: `White`,
+        rating: 4.0,
+        color: [`White`],
         size: `XL`
     }
     ,
@@ -44,8 +44,8 @@ const products = [
         description: `Polyester,spandex,cotton,soft and silky feeling,never fading or shrink.High Quality and comfortable.`,
         price: 27.00,
         quantity: 1,
-        category: `clothing`,
-        color: `White`,
+        rating: 3.0,
+        color: [`White`],
         size: `L`
     }
     ,
@@ -56,20 +56,20 @@ const products = [
         description: `A fleece lining provides excellent comfort and warmth in a black colorway that features an iconic Thrasher flame logo graphic screen printed on the chest.`,
         price: 99.00,
         quantity: 4,
-        category: `clothing`,
-        color: `Black`,
+        rating: 4,
+        color: [`Black`],
         size: `XL`
     }
     ,
     {
         id: 6,
-        name: `Champion Reverse Weave All Over Print Black`,
+        name: `Champion All Over Black`,
         image: "img/Champion.jpg",
-        description: `Bundle up in classic athleisure style with the Champion Reverse Weave All Over Print black hoodie. This classic hoodie features a fleece lined interior for maximum comfort, while Champion logo script screen-printed throughout in white provides a prominent splash of classic branding and style.`,
+        description: `Bundle up in classic athleisure style with the Champion Reverse Weave All Over Print black hoodie.`,
         price: 95.00,
         quantity: 1,
-        category: `clothing`,
-        color: `Black`,
+        rating: 3.5,
+        color: [`Black`, `Red`],
         size: `L`
     }
     ,
@@ -80,8 +80,8 @@ const products = [
         description: `Add some collegiate flair to your streetwear style with the Sports grey, teal and gold hoodie from Obey. A heather grey construction is further highlighted by a teal and gold screen-printed logo across the chest`,
         price: 85.00,
         quantity: 1,
-        category: `clothing`,
-        color: `White`,
+        rating: 3.5,
+        color: [`White`],
         size: `XL`
     }
     ,
@@ -92,8 +92,8 @@ const products = [
         description: `The FC Barcelona Hoodie has soft French terry fleece with team details to keep you comfortable while repping your team.`,
         price: 48.00,
         quantity: 1,
-        category: `clothing`,
-        color: `Red`,
+        rating: 2.7,
+        color: [`Red`],
         size: `L`
     }
     ,
@@ -104,8 +104,8 @@ const products = [
         description: `Connect with your team in the Chicago Bulls Nike Spotlight NBA Hoodie, a pullover hoodie inspired by what pros wear at training. It's made from mid-weight, double-knit fabric that's soft yet durable and comfortable all around.`,
         price: 84.00,
         quantity: 1,
-        category: `clothing`,
-        color: `Red`,
+        rating: 3.5,
+        color: [`Red`],
         size: `M`
     }
     ,
@@ -116,8 +116,8 @@ const products = [
         description: `The Nike Circuit Logo Essential (NFL Raiders) Men's Pullover Hoodie pays tribute to your team with a logo detail on warm, comfortable fabric.`,
         price: 190.00,
         quantity: 1,
-        category: `clothing`,
-        color: `Black`,
+        rating: 4.5,
+        color: [`Black`],
         size: `XL`
     }
     ,
@@ -128,8 +128,8 @@ const products = [
         description: `Whether he’s biking to school or playing ball in the park, our new and improved midweight hoodie features a cordless hood and cozy kangaroo pocket that’s deep enough to stash small souvenirs from the trails.`,
         price: 50.00,
         quantity: 1,
-        category: `clothing`,
-        color: `Grey`,
+        rating: 5,
+        color: [`Grey`],
         size: `M`
     }
     ,
@@ -140,8 +140,8 @@ const products = [
         description: `Kangaroo pocket; Drawcord-adjustable hood.Long sleeves with ribbed cuffs. 100% soft feel.`,
         price: 25.00,
         quantity: 1,
-        category: `clothing`,
-        color: `Black`,
+        rating: 1.5,
+        color: [`Black`],
         size: `S`
     }
     ,
@@ -152,8 +152,8 @@ const products = [
         description: `Nike's Club Fleece Logo Pullover hoodie is a classic must-have piece in every Dallas Cowboys fan's closet.`,
         price: 52.00,
         quantity: 1,
-        category: `clothing`,
-        color: `Blue`,
+        rating: 4.2,
+        color: [`Blue`],
         size: `S`
     }
     ,
@@ -164,8 +164,8 @@ const products = [
         description: `Men's Nike Dak Prescott Navy Dallas Cowboys Therma Jersey`,
         price: 97.00,
         quantity: 1,
-        category: `clothing`,
-        color: `Blue`,
+        rating: 3.5,
+        color: [`Blue`],
         size: `M`
     }
     ,
@@ -176,8 +176,8 @@ const products = [
         description: `Nike's Club Fleece Logo Pullover hoodie is a classic must-have piece in every Dallas Cowboys fan's closet.`,
         price: 69.99,
         quantity: 1,
-        category: `clothing`,
-        color: `Blue`,
+        rating: 4.5,
+        color: [`Blue`],
         size: `M`
     }
     ,
@@ -188,9 +188,9 @@ const products = [
         description: `Nike's Club Fleece Logo Pullover hoodie is a classic must-have piece in every Dallas Cowboys fan's closet.`,
         price: 64.99,
         quantity: 1,
-        category: `clothing`,
-        color: `Grey`,
-        size: `S`
+        rating: 4.0,
+        color: [`Grey`],
+        size: `XS`
     }
     ,
     {
@@ -200,8 +200,8 @@ const products = [
         description: `Secure the look of a true die-hard Oakland Raiders fan this season with this Center Piece pullover hoodie from Mitchell & Ness!`,
         price: 44.00,
         quantity: 1,
-        category: `clothing`,
-        color: `Grey`,
+        rating: 3.5,
+        color: [`Grey`],
         size: `XL`
     }
     ,
@@ -212,8 +212,8 @@ const products = [
         description: `Nike's Club Fleece Logo Pullover hoodie is a classic must-have piece in every Dallas Cowboys fan's closet.`,
         price: 52.00,
         quantity: 1,
-        category: `clothing`,
-        color: `Blue`,
+        rating: 3.0,
+        color: [`Blue`],
         size: `S`
     }
     ,
@@ -224,8 +224,8 @@ const products = [
         description: `Nike's Club Fleece Logo Pullover hoodie is a classic must-have piece in every Dallas Cowboys fan's closet.`,
         price: 52.00,
         quantity: 1,
-        category: `clothing`,
-        color: `Blue`,
+        rating: 2.5,
+        color: [`Blue`],
         size: `S`
     }
     ,
@@ -236,8 +236,8 @@ const products = [
         description: `Nike's Club Fleece Logo Pullover hoodie is a classic must-have piece in every Dallas Cowboys fan's closet.`,
         price: 74.99,
         quantity: 1,
-        category: `clothing`,
-        color: `Grey`,
+        rating: 3.0,
+        color: [`Grey`],
         size: `L`
     }
     
@@ -248,12 +248,12 @@ function getProductsasHtml(product)
  return `
     <article class="product">
     <h3 id="name">${product.name}</h3>
-        <ul class="courst-info">
+        <ul class="course-info">
             <li><img src="${product.image}" style="height:20em; width:20em;" alt="${product.name}"> </strong></li>
             <li><strong>  ${product.description} </strong></li>
             <li>Price: <strong>${product.price}$</strong>
-            <li>Quantity In-stock: <strong>${product.quantity}</strong></li>
-            <li>Category: ${product.category}</li>
+            <li>In-stock: <strong>${product.quantity}</strong></li>
+            <li><strong>Rating ${product.rating} </strong> </li>
             <li>Color: ${product.color}</li>
             <li>Size: ${product.size}</li>
             <li><button id="addtocart"> Add To Cart </button></li>
@@ -261,7 +261,9 @@ function getProductsasHtml(product)
         </article>`
  }
 
-function displaySearchBar(){ /***************SEARCH BOX DYNAMIC/************/
+/***************SEARCH BOX DYNAMIC/************/
+
+function displaySearchBar(){ 
     return `
         <div class="search-box"> 
         <input class="search-txt" id="search-box" type="text" placeholder="Type to search">
@@ -269,6 +271,8 @@ function displaySearchBar(){ /***************SEARCH BOX DYNAMIC/************/
         </button>
         </div>`
 }
+
+/**********Filters for Colors *********/
 
 const filterForRed = () =>{
     const redProducts = products.filter(c => c.color == "Red");
@@ -300,6 +304,72 @@ const filterForBlue = () => {
 
 }
 
+/**********Filters for size *********/
+
+const filterForXS = () =>{
+    const extraSmallProducts = products.filter(c =>c.size =="XS");
+    renderProductsFromArray(extraSmallProducts)
+}
+
+const filterForS = () =>{
+    const extraSmallProducts = products.filter(c =>c.size =="S");
+    renderProductsFromArray(extraSmallProducts)
+}
+
+const filterForM = () =>{
+    const extraSmallProducts = products.filter(c =>c.size =="M");
+    renderProductsFromArray(extraSmallProducts)
+}
+
+const filterForL = () =>{
+    const extraSmallProducts = products.filter(c =>c.size =="L");
+    renderProductsFromArray(extraSmallProducts)
+}
+
+const filterForXL = () =>{
+    const extraSmallProducts = products.filter(c =>c.size =="XL");
+    renderProductsFromArray(extraSmallProducts)
+}
+
+/**********Filters for Rating *********/
+
+const filterForFourandAbove = () => {
+    const filtForfour = products.filter(c => c.rating >=4)
+    renderProductsFromArray(filtForfour)
+}
+
+const filterForThreeandAbove = () => {
+    const filtForThree = products.filter(c => c.rating >=3 && c.rating < 4)
+    renderProductsFromArray(filtForThree)
+}
+
+const filterForTwoandAbove = () => {
+    const filtForTwo = products.filter(c => c.rating >=2 &&  c.rating < 3)
+    renderProductsFromArray(filtForTwo)
+}
+
+const filterForOneandAbove = () => {
+    const filtForOne = products.filter(c => c.rating >=1  &&  c.rating < 2)
+    renderProductsFromArray(filtForOne)
+}
+
+/***************SORT ****************/
+const sortProducts =  (arrtoSort) => {
+
+    // const sorted_array = arrtoSort.slice();
+    // console.log(products);
+    // console.log(arrtoSort.name.sort());
+    // console.log(sorted);
+    
+    
+        console.log(arrtoSort.sort((a, b) => a.name - b.name));
+        console.log(arrtoSort);
+    
+
+    renderProductsFromArray(arrtoSort);
+}
+
+
 const searchForProducts=() => {
     const search = document.getElementById("search-box").value;
     console.log(search);
@@ -316,6 +386,11 @@ const viewAsTiles = ( ) => {
     document.getElementById("products_display").classList.toggle('grid-view');
 }
 
+// const changeLayout =() =>{
+//     document.getElementById("view").src = `/img/list.svg`;
+// }
+
+
 /*******************EXECUTION **********************/
 window.addEventListener('load', () => {
 
@@ -325,10 +400,37 @@ window.addEventListener('load', () => {
     document.getElementById("search_bar").innerHTML = displaySearchBar();
     document.getElementById("search-box").addEventListener("input",searchForProducts);
     document.getElementById("courseView").addEventListener("click",viewAsTiles);
+    
+    
+    /************COLOR FILTERS EXECUTION **************/
     document.getElementById("red").addEventListener("click",filterForRed);
     document.getElementById("black").addEventListener("click",filterForBlack);
     document.getElementById("blue").addEventListener("click",filterForBlue);
     document.getElementById("grey").addEventListener("click",filterForGrey);
     document.getElementById("white").addEventListener("click",filterForWhite);
+    
+    // document.getElementById("asc").addEventListener("click",sortProducts(products));
+    
+    
+    /************SIZE FILERS EXECUTION ************/
+    
+    document.getElementById("xs").addEventListener("click",filterForXS);
+    document.getElementById("sm").addEventListener("click",filterForS);
+    document.getElementById("md").addEventListener("click",filterForM);
+    document.getElementById("lg").addEventListener("click",filterForL);
+    document.getElementById("xl").addEventListener("click",filterForXL);
 
+    /************Rating FILERS EXECUTION ************/
+    document.getElementById("aboveFour").addEventListener("click",filterForFourandAbove);
+    document.getElementById("aboveThree").addEventListener("click",filterForThreeandAbove);
+    document.getElementById("aboveTwo").addEventListener("click",filterForTwoandAbove);
+    document.getElementById("aboveOne").addEventListener("click",filterForOneandAbove);
+
+
+    // document.getElementById("courseView").addEventListener("click",changeLayout);
+
+    // document.getElementById('btn').addEventListener('click', event => {
+    //     document.getElementById('side-nav').classList.toggle('open');
+    //   });
+    
 });

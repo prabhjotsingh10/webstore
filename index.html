@@ -15,15 +15,9 @@
 
 <body>
 
-
   <header id="first-header">
-    <!-- Site logo, replace with your own -->
-    <!-- <a href="index.html"><img src="img/logo.svg" alt="HTML Logo (replace this)"></a> -->
-    <!-- 
       
-     Navigation menu and toggle button (example) -->
     <nav aria-label="Primary" class="header">
-      <!-- <div class="search-box"> <input class="search-txt" type="text" name="" placeholder="Type to search"> <a class="search-btn" href=#> <i class="fas fa-search"></i> </a> </div> -->
       <a href="index.html" class="logo"><img src="img/Logo-new.svg" style="width: 4em; height: 3em; margin-bottom: 30px;" alt="HTML Logo (replace this)"></a> 
       <a href="#">Home</a>
       <div class="dropdown">
@@ -43,17 +37,18 @@
    
   </header>
   <div id="container">
-    <h1>Shop for our exclusive Product Deals.Only till Christmas. <i class="fas fa-sleigh"></i> </h1>
-    <!-- <button type="button" class="view-products"> SHOP NOW</button> -->
-    <button id="courseView"><img src="/img/tile.svg" id="view" style="height: 20px; width: 20px; color: red;"> </button><p id="search_bar"> &nbsp;</p>
+    <h1>Shop for our exclusive Product Deals. Only till <span class="christmas">Christmas. <i class="fas fa-gift"></i> </span> </h1>
+    <button id="courseView"><img src="/img/tile.svg" id="view" style="height: 20px; width: 20px;"> </button> <p id="search_bar"> &nbsp;</p>
     <div class="sort">
         <p id="sort-by">Sort By</p><button type="button" class="view-products" id="asc">ALPHABETS (A-Z) </button><button type="button" class="view-products" id="prc_asc">PRICE (LOW-HIGH) </button><button type="button" class="view-products" id="prc_dsc">PRICE (HIGH-LOW)</button>
       </div>
     </div>
 
   <main>
-
-    <section class="main-content">
+    <!-- <button type="button" class="mainmenu-toggle" id="btn">
+      <span class="material-icons">menu</span>
+    </button>    -->
+    <section class="main-content"> 
       <div id="side-nav">
         <form>
           <h2>Filters</h2>
@@ -65,7 +60,7 @@
             </select> -->
           </fieldset>
           <fieldset>
-            <legend>Colour</legend>
+            <legend>Colour :</legend>
             <ul>
               <li><input type="checkbox" name="colour" value="black" id="black"> <label for="black">Black</label></li>
               <li><input type="checkbox" name="colour" value="white" id="white"> <label for="white">White</label></li>
@@ -75,7 +70,7 @@
             </ul>
           </fieldset>
           <fieldset>
-            <legend>Sizes</legend>
+            <legend>Sizes :</legend>
             <ol>
               <li><input type="checkbox" name="size" value="xs" id="xs"> <label for="xs">XS</label></li>
               <li><input type="checkbox" name="size" value="sm" id="sm"> <label for="sm">S</label></li>
@@ -85,7 +80,7 @@
             </ol>
           </fieldset>
           <fieldset>
-            <legend>Ratings (at least)</legend>
+            <legend>Ratings (at least) :</legend>
             <ol>
               <li>
                 <input type="radio" name="rating" value="4" id="aboveFour">

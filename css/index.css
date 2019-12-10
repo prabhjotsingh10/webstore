@@ -5,7 +5,7 @@ html{
 
 }
 main{
-    background-image: url("/img/laser.jpg");
+    background-image: url("../img/laser.jpg");
     /* background-color: darkslategrey; */
     background-position: center;
     background-size: contain;
@@ -38,6 +38,10 @@ nav a{
     
 }
 
+
+.banner{
+    margin-top: 5em;
+}
 
 /**************************/
 
@@ -267,7 +271,7 @@ input[type=radio]:focus + label {
 
 /*****************************FOOTER *************************/
 footer{
-    background-image: url("/img/footer.jpg");
+    background-image: url("../img/footer.jpg");
     background-size: cover;
     width:100%;
     color: white;

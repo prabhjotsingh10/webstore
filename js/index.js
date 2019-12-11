@@ -124,7 +124,7 @@ const products = [
     {
         id: 11,
         name: `The North Face`,
-        image: "img/THe North Face.jpg",
+        image: "img/The North Face.jpg",
         description: `Whether he’s biking to school or playing ball in the park, our new and improved midweight hoodie features a cordless hood and cozy kangaroo pocket that’s deep enough to stash small souvenirs from the trails.`,
         price: 50.00,
         quantity: 1,
@@ -148,7 +148,7 @@ const products = [
     {
         id: 13,
         name: `Nike Navy Dallas`,
-        image: "img/Nike navy Dallas.jpg",
+        image: "img/Nike Navy Dallas.jpg",
         description: `Nike's Club Fleece Logo Pullover hoodie is a classic must-have piece in every Dallas Cowboys fan's closet.`,
         price: 52.00,
         quantity: 1,
@@ -208,7 +208,7 @@ const products = [
     {
         id: 18,
         name: `Nike Navy Dallas`,
-        image: "img/Nike navy Dallas.jpg",
+        image: "img/Nike Navy Dallas.jpg",
         description: `Nike's Club Fleece Logo Pullover hoodie is a classic must-have piece in every Dallas Cowboys fan's closet.`,
         price: 52.00,
         quantity: 1,
@@ -220,7 +220,7 @@ const products = [
     {
         id: 19,
         name: `Nike Navy Dallas`,
-        image: "img/Nike navy Dallas.jpg",
+        image: "img/Nike Navy Dallas.jpg",
         description: `Nike's Club Fleece Logo Pullover hoodie is a classic must-have piece in every Dallas Cowboys fan's closet.`,
         price: 52.00,
         quantity: 1,
@@ -232,7 +232,7 @@ const products = [
     {
         id: 20,
         name: `Nike Grey Navy Dallas`,
-        image: "img/Nike navy Dallas.jpg",
+        image: "img/Nike Navy Dallas.jpg",
         description: `Nike's Club Fleece Logo Pullover hoodie is a classic must-have piece in every Dallas Cowboys fan's closet.`,
         price: 74.99,
         quantity: 1,

@@ -4,11 +4,11 @@ let button = document.getElementById("view-products");
 const products = [
     {
         id: 1,
-        name: `Hanes Men's pullover`,
+        name: `Hanes pullover`,
         image: "img/Hanes Men's pullover.jpg",
         description: "Fabric Content: 50% cotton/50% polyester, with up to 5% polyester created from recycled plastic",
         price: 15.99,
-        quantity: 1,
+        quantity: 10,
         rating: 4.2,
         color: [`Red`],
         size: `M`
@@ -20,7 +20,7 @@ const products = [
         image: "img/adidas athletics.jpg",
         description: "Fabric Content: Long sleeves with ribbed cuffs. 70% cotton / 30% recycled polyester French terry",
         price: 85.00,
-        quantity: 1,
+        quantity: 9,
         rating: 4.1,
         color: [`Gray`],
         size: `L`
@@ -29,9 +29,9 @@ const products = [
         id: 3,
         name: `Adidas Originals`,
         image: "img/adidas originals.jpg",
-        description: `Kangaroo pocket; Drawcord-adjustable hood.Long sleeves with ribbed cuffs. 100% soft feel.`,
+        description: `Fabric Content: Long sleeves with ribbed cuffs. 90% cotton / 10% recycled polyester French terry`,
         price: 54.00,
-        quantity: 1,
+        quantity: 8,
         rating: 4.0,
         color: [`White`],
         size: `XL`
@@ -41,9 +41,9 @@ const products = [
         id: 4,
         name: `3D Graphic Rainbow hoodie`,
         image: "img/Rainbow-hoodie.jpg",
-        description: `Polyester,spandex,cotton,soft and silky feeling,never fading or shrink.High Quality and comfortable.`,
+        description: `Fabric Content: Polyester,spandex,cotton,soft and silky feeling,never fading or shrink.`,
         price: 27.00,
-        quantity: 1,
+        quantity: 7,
         rating: 3.0,
         color: [`White`],
         size: `L`
@@ -53,9 +53,9 @@ const products = [
         id: 5,
         name: `Thrasher Flame Logo Hoodie`,
         image: "img/Thrasher.jpg",
-        description: `A fleece lining provides excellent comfort and warmth in a black colorway that features an iconic Thrasher flame logo graphic screen printed on the chest.`,
+        description: ` A fleece lining provides excellent comfort and warmth in a black colorway.`,
         price: 99.00,
-        quantity: 4,
+        quantity: 6,
         rating: 4,
         color: [`Black`],
         size: `XL`
@@ -65,9 +65,9 @@ const products = [
         id: 6,
         name: `Champion All Over Black`,
         image: "img/Champion.jpg",
-        description: `Bundle up in classic athleisure style with the Champion Reverse Weave All Over Print black hoodie.`,
+        description: `Fabric Content: Polyester,spandex,cotton,soft and silky feeling,never fading or shrink.`,
         price: 95.00,
-        quantity: 1,
+        quantity: 5,
         rating: 3.5,
         color: [`Black`, `Red`],
         size: `L`
@@ -77,9 +77,9 @@ const products = [
         id: 7,
         name: `Obey Sports grey`,
         image: "img/Obey.jpg",
-        description: `Add some collegiate flair to your streetwear style with the Sports grey, teal and gold hoodie from Obey. A heather grey construction is further highlighted by a teal and gold screen-printed logo across the chest`,
+        description: `A heather grey construction is highlighted by a teal and gold screen-printed logo across the chest`,
         price: 85.00,
-        quantity: 1,
+        quantity: 4,
         rating: 3.5,
         color: [`White`],
         size: `XL`
@@ -91,7 +91,7 @@ const products = [
         image: "img/FC Barcelona.jpg",
         description: `The FC Barcelona Hoodie has soft French terry fleece with team details to keep you comfortable while repping your team.`,
         price: 48.00,
-        quantity: 1,
+        quantity: 3,
         rating: 2.7,
         color: [`Red`],
         size: `L`
@@ -101,9 +101,9 @@ const products = [
         id: 9,
         name: `Chicago Bulls`,
         image: "img/Chicago Bulls.jpg",
-        description: `Connect with your team in the Chicago Bulls Nike Spotlight NBA Hoodie, a pullover hoodie inspired by what pros wear at training. It's made from mid-weight, double-knit fabric that's soft yet durable and comfortable all around.`,
+        description: `A pullover hoodie inspired by what pros wear at training made from mid-weight, double-knit fabric that's soft yet durable and comfortable all around.`,
         price: 84.00,
-        quantity: 1,
+        quantity: 2,
         rating: 3.5,
         color: [`Red`],
         size: `M`
@@ -113,9 +113,9 @@ const products = [
         id: 10,
         name: `NFL Raiders`,
         image: "img/NFL Raiders.jpg",
-        description: `The Nike Circuit Logo Essential (NFL Raiders) Men's Pullover Hoodie pays tribute to your team with a logo detail on warm, comfortable fabric.`,
+        description: `A pullover hoodie inspired by what pros wear at training made from mid-weight, double-knit fabric that's soft yet durable and comfortable all around.`,
         price: 190.00,
-        quantity: 1,
+        quantity: 2,
         rating: 4.5,
         color: [`Black`],
         size: `XL`
@@ -125,9 +125,9 @@ const products = [
         id: 11,
         name: `The North Face`,
         image: "img/TNF.jpg",
-        description: `Whether he’s biking to school or playing ball in the park, our new and improved midweight hoodie features a cordless hood and cozy kangaroo pocket that’s deep enough to stash small souvenirs from the trails.`,
+        description: `Kangaroo pocket; Drawcord-adjustable hood.Long sleeves with ribbed cuffs. 100% soft feel.`,
         price: 50.00,
-        quantity: 1,
+        quantity: 3,
         rating: 5,
         color: [`Grey`],
         size: `M`
@@ -135,11 +135,11 @@ const products = [
     ,
     {
         id: 12,
-        name: `H&M Hooded Sweatshirt`,
+        name: `H&M Hooded `,
         image: "img/H&M.jpg",
         description: `Kangaroo pocket; Drawcord-adjustable hood.Long sleeves with ribbed cuffs. 100% soft feel.`,
         price: 25.00,
-        quantity: 1,
+        quantity: 4,
         rating: 1.5,
         color: [`Black`],
         size: `S`
@@ -151,7 +151,7 @@ const products = [
         image: "img/Nike Navy Dallas.jpg",
         description: `Nike's Club Fleece Logo Pullover hoodie is a classic must-have piece in every Dallas Cowboys fan's closet.`,
         price: 52.00,
-        quantity: 1,
+        quantity: 5,
         rating: 4.2,
         color: [`Blue`],
         size: `S`
@@ -161,9 +161,9 @@ const products = [
         id: 14,
         name: `Nike Dak Prescott`,
         image: "img/Nike Dak Prescott.jpg",
-        description: `Men's Nike Dak Prescott Navy Dallas Cowboys Therma Jersey`,
+        description: `Nike's Club Fleece Logo Pullover hoodie is a classic must-have piece in every Dallas Cowboys fan's closet.`,
         price: 97.00,
-        quantity: 1,
+        quantity: 6,
         rating: 3.5,
         color: [`Blue`],
         size: `M`
@@ -171,11 +171,11 @@ const products = [
     ,
     {
         id: 15,
-        name: `Adidas Originals Lockup Hoodie`,
+        name: `Adidas Orig Lockup Hoodie`,
         image: "img/Adidas Originals Lockup Hoodie.jpg",
         description: `Nike's Club Fleece Logo Pullover hoodie is a classic must-have piece in every Dallas Cowboys fan's closet.`,
         price: 69.99,
-        quantity: 1,
+        quantity: 7,
         rating: 4.5,
         color: [`Blue`],
         size: `M`
@@ -187,7 +187,7 @@ const products = [
         image: "img/Nike white dallas cowboys.jpg",
         description: `Nike's Club Fleece Logo Pullover hoodie is a classic must-have piece in every Dallas Cowboys fan's closet.`,
         price: 64.99,
-        quantity: 1,
+        quantity: 8,
         rating: 4.0,
         color: [`Grey`],
         size: `XS`
@@ -195,11 +195,11 @@ const products = [
     ,
     {
         id: 17,
-        name: `Mitchell and Ness Grey Oakland`,
+        name: `Mitchell and Ness Oakland`,
         image: "img/Mitchell and Ness Grey Oakland.jpg",
         description: `Secure the look of a true die-hard Oakland Raiders fan this season with this Center Piece pullover hoodie from Mitchell & Ness!`,
         price: 44.00,
-        quantity: 1,
+        quantity: 9,
         rating: 3.5,
         color: [`Grey`],
         size: `XL`
@@ -211,7 +211,7 @@ const products = [
         image: "img/Nike Navy Dallas.jpg",
         description: `Nike's Club Fleece Logo Pullover hoodie is a classic must-have piece in every Dallas Cowboys fan's closet.`,
         price: 52.00,
-        quantity: 1,
+        quantity: 10,
         rating: 3.0,
         color: [`Blue`],
         size: `S`
@@ -223,7 +223,7 @@ const products = [
         image: "img/Nike Navy Dallas.jpg",
         description: `Nike's Club Fleece Logo Pullover hoodie is a classic must-have piece in every Dallas Cowboys fan's closet.`,
         price: 52.00,
-        quantity: 1,
+        quantity: 11,
         rating: 2.5,
         color: [`Blue`],
         size: `S`
@@ -235,7 +235,7 @@ const products = [
         image: "img/Nike Navy Dallas.jpg",
         description: `Nike's Club Fleece Logo Pullover hoodie is a classic must-have piece in every Dallas Cowboys fan's closet.`,
         price: 74.99,
-        quantity: 1,
+        quantity: 12,
         rating: 3.0,
         color: [`Grey`],
         size: `L`
@@ -256,7 +256,7 @@ function getProductsasHtml(product)
             <li><strong>Rating ${product.rating} </strong> </li>
             <li>Color: ${product.color}</li>
             <li>Size: ${product.size}</li>
-            <li><button id="addtocart"> Add To Cart </button></li>
+            <li><button class="addtocart"> Add To Cart </button></li>
         </ul>
         </article>`
  }
@@ -378,8 +378,6 @@ const sortProductsByPriceAsc =  (arrtoSort) => {
 renderProductsFromArray(arrtoSort);
 }
 
-
-
 const searchForProducts=() => {
     const search = document.getElementById("search-box").value;
     console.log(search);
@@ -396,23 +394,42 @@ const viewAsTiles = ( ) => {
     document.getElementById("products_display").classList.toggle('grid-view');
 }
 
-// const changeLayout =() =>{
-//     document.getElementById("view").src = `/img/list.svg`;
-// }
+// const shoes = [
+//     { name: 'air force 1',colors: ['black', 'white', 'red']},
+//     { name: 'chuck tailors', colors: ['black', 'white']}
+//   ];
 
+
+/****************Filtering on Multiple check boxes ***************/
+let colored = document.querySelectorAll('[name = "colour"]:checked');
+
+
+const selectedColors = []
+for (i=0 ; i<colored.length ;i++){
+    if(colored[i].checked){
+        selectedColors.push(colored[i].value);
+        console.log(selectedColors.length);
+    }
+}
+
+  const myHoodies = () =>{
+    if(selectedColors.length!=0){ 
+        products.filter(s =>selectedColors.filter(val => s.color.includes(val)).length > 0);
+        console.log(myHoodies)}
+       
+    }
 
 /*******************EXECUTION **********************/
 window.addEventListener('load', () => {
 
-    // document.getElementById("products_display").innerHTML = products.map(getProductsasHtml).join("\n")    ;
     renderProductsFromArray(products);
-
     document.getElementById("search_bar").innerHTML = displaySearchBar();
     document.getElementById("search-box").addEventListener("input",searchForProducts);
     document.getElementById("courseView").addEventListener("click",viewAsTiles);
     
     
     /************COLOR FILTERS EXECUTION **************/
+
     document.getElementById("red").addEventListener("click",filterForRed);
     document.getElementById("black").addEventListener("click",filterForBlack);
     document.getElementById("blue").addEventListener("click",filterForBlue);
@@ -433,16 +450,14 @@ window.addEventListener('load', () => {
     document.getElementById("xl").addEventListener("click",filterForXL);
 
     /************Rating FILERS EXECUTION ************/
+
     document.getElementById("aboveFour").addEventListener("click",filterForFourandAbove);
     document.getElementById("aboveThree").addEventListener("click",filterForThreeandAbove);
     document.getElementById("aboveTwo").addEventListener("click",filterForTwoandAbove);
     document.getElementById("aboveOne").addEventListener("click",filterForOneandAbove);
 
+    /*********************Multiple CHeck Boxes execution *************/
 
-    // document.getElementById("courseView").addEventListener("click",changeLayout);
-
-    // document.getElementById('btn').addEventListener('click', event => {
-    //     document.getElementById('side-nav').classList.toggle('open');
-    //   });
-    
+    document.querySelectorAll('[name = "colour"]').forEach(chkbox => chkbox.addEventListener("click",myHoodies));
+    // document.getElementById("black").addEventListener("click", ()=> myShoes)
 });

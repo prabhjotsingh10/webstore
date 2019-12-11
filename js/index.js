@@ -124,7 +124,7 @@ const products = [
     {
         id: 11,
         name: `The North Face`,
-        image: "img/The North Face.jpg",
+        image: "img/TNF.jpg",
         description: `Whether he’s biking to school or playing ball in the park, our new and improved midweight hoodie features a cordless hood and cozy kangaroo pocket that’s deep enough to stash small souvenirs from the trails.`,
         price: 50.00,
         quantity: 1,

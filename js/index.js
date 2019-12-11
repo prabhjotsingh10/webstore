@@ -17,7 +17,7 @@ const products = [
     {
         id: 2,
         name: `Adidas Athletics`,
-        image: "/img/adidas athletics.jpg",
+        image: "img/adidas athletics.jpg",
         description: "Fabric Content: Long sleeves with ribbed cuffs. 70% cotton / 30% recycled polyester French terry",
         price: 85.00,
         quantity: 1,

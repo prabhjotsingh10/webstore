@@ -38,7 +38,6 @@ nav a{
     
 }
 
-
 .banner{
     margin-top: 5em;
 }
@@ -52,6 +51,8 @@ nav{
     list-style-type: none;
     background-color: black;
     height: 6em;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .dropdown{
@@ -78,13 +79,14 @@ nav{
 }
 
 .logo{
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
+    display: inline-block;
 }
 
 .header a, .dropdown{
     color: whitesmoke;
     transition: all 0.3s ease-in;
-    padding-top: 2rem;
+    /* padding-top: 2rem; */
     font-size: 1.3rem
 }
 
@@ -169,6 +171,7 @@ input[type=radio]:focus + label {
 }
 
 #sort-by{
+    font-weight: 1000;
     font-size: 1.5em;
     display: inline-block;
     margin-right: 2em;

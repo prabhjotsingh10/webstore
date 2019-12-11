@@ -354,20 +354,30 @@ const filterForOneandAbove = () => {
 }
 
 /***************SORT ****************/
-const sortProducts =  (arrtoSort) => {
-
-    // const sorted_array = arrtoSort.slice();
-    // console.log(products);
-    // console.log(arrtoSort.name.sort());
-    // console.log(sorted);
+const sortProductsByName =  (arrtoSort) => {
     
-    
-        console.log(arrtoSort.sort((a, b) => a.name - b.name));
-        console.log(arrtoSort);
-    
+    arrtoSort.sort((a, b) => a.name.localeCompare(b.name));
+    console.log(arrtoSort);
 
     renderProductsFromArray(arrtoSort);
 }
+
+const sortProductsByPriceDsc =  (arrtoSort) => {
+    
+        arrtoSort.sort((a, b) => b.price - a.price);
+        console.log(arrtoSort);
+
+    renderProductsFromArray(arrtoSort);
+}
+
+const sortProductsByPriceAsc =  (arrtoSort) => {
+    
+    arrtoSort.sort((a, b) => a.price - b.price);
+    console.log(arrtoSort);
+
+renderProductsFromArray(arrtoSort);
+}
+
 
 
 const searchForProducts=() => {
@@ -409,7 +419,9 @@ window.addEventListener('load', () => {
     document.getElementById("grey").addEventListener("click",filterForGrey);
     document.getElementById("white").addEventListener("click",filterForWhite);
     
-    // document.getElementById("asc").addEventListener("click",sortProducts(products));
+    document.getElementById("asc").addEventListener("click",() => sortProductsByName(products));
+    document.getElementById("prc_asc").addEventListener("click",() => sortProductsByPriceAsc(products));
+    document.getElementById("prc_dsc").addEventListener("click",() => sortProductsByPriceDsc(products));
     
     
     /************SIZE FILERS EXECUTION ************/

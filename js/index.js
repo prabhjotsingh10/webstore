@@ -354,6 +354,7 @@ const filterForOneandAbove = () => {
 }
 
 /***************SORT ****************/
+
 const sortProductsByName =  (arrtoSort) => {
     
     arrtoSort.sort((a, b) => a.name.localeCompare(b.name));
@@ -393,12 +394,6 @@ const renderProductsFromArray = (arr) => {
 const viewAsTiles = ( ) => {
     document.getElementById("products_display").classList.toggle('grid-view');
 }
-
-// const shoes = [
-//     { name: 'air force 1',colors: ['black', 'white', 'red']},
-//     { name: 'chuck tailors', colors: ['black', 'white']}
-//   ];
-
 
 /****************Filtering on Multiple check boxes ***************/
 let colored = document.querySelectorAll('[name = "colour"]:checked');
@@ -459,5 +454,5 @@ window.addEventListener('load', () => {
     /*********************Multiple CHeck Boxes execution *************/
 
     document.querySelectorAll('[name = "colour"]').forEach(chkbox => chkbox.addEventListener("click",myHoodies));
-    // document.getElementById("black").addEventListener("click", ()=> myShoes)
+    
 });

@@ -294,10 +294,13 @@ footer a:hover {
 
 }
 
+.icons ul{
+    text-align: center;
+}
+
 .icons ul li{
     display: inline-block;
     margin: 1em 0em;
-    
 }
 
 .icons ul li a {

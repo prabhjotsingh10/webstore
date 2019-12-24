@@ -251,7 +251,7 @@ function getProductsasHtml(product)
         <ul class="course-info">
             <li><img src="${product.image}" style="height:20em; width:20em;" alt="${product.name}"> </strong></li>
             <li><strong>  ${product.description} </strong></li>
-            <li>Price: <strong>${product.price}$</strong>
+            <li>Price: <strong>${product.price}$</strong></li>
             <li>In-stock: <strong>${product.quantity}</strong></li>
             <li><strong>Rating ${product.rating} </strong> </li>
             <li>Color: ${product.color}</li>
